@@ -9,3 +9,9 @@ resolvers ++= Seq{
   "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/releases";
   "Typesafe Repository" at "https://repo.typesafe.com/typesafe/releases"
 }
+
+libraryDependencies ++= Seq{
+  "commons-io" % "commons-io" % "2.4"
+}
+
+fork:=false
