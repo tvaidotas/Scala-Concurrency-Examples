@@ -1,6 +1,6 @@
 package chap2
 
-object ThreadsCreation extends App {
+object ThreadsCreation extends App with Logging {
 
   class MyThread extends Thread {
     override def run(): Unit = {
@@ -12,18 +12,5 @@ object ThreadsCreation extends App {
   thread.start()
   thread.join()
   println("new thread joined")
-
-  def thread(body: => Unit): Thread ={
-    val thread = new Thread{
-      override def run() = body
-    }
-    thread.start()
-    thread
-  }
-
-  val thread2 = thread{
-    Thread.sleep(1000)
-
-  }
 
 }
