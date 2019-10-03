@@ -1,6 +1,6 @@
 package chap2
 
-object ThreadsCreation extends App with Logging {
+object ThreadsCreation extends ToRun {
 
   class MyThread extends Thread {
     override def run(): Unit = {

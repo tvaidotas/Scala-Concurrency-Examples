@@ -1,16 +1,6 @@
 package chap2
 
-import chap2.ThreadsCreation.log
-
-object ThreadSleep extends App with Logging {
-
-  def thread(body: => Unit): Thread ={
-    val thread = new Thread{
-      override def run() = body
-    }
-    thread.start()
-    thread
-  }
+object ThreadSleep extends ToRun {
 
   val thread2 = thread {
     Thread.sleep(1000)

@@ -1,7 +1,9 @@
 package chap2
 
-object ThreadNondeterministic extends App with Logging {
+object ThreadNondeterministic extends ToRun {
 
+  val t = thread{
 
+  }
 
 }
