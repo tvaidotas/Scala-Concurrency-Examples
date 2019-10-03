@@ -21,6 +21,9 @@ object ThreadsCreation extends App {
     thread
   }
 
+  val thread2 = thread{
+    Thread.sleep(1000)
 
+  }
 
 }
