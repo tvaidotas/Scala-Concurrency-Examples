@@ -1,5 +1,7 @@
 package chap2
 
+import helpers.ToRun
+
 object ThreadsCreation extends ToRun {
 
   class MyThread extends Thread {

@@ -1,5 +1,7 @@
 package chap2
 
+import helpers.ToRun
+
 object ThreadSleep extends ToRun {
 
   val thread2 = thread {

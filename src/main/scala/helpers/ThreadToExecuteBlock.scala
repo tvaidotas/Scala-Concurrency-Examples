@@ -1,4 +1,4 @@
-package chap2
+package helpers
 
 trait ThreadToExecuteBlock {
 
